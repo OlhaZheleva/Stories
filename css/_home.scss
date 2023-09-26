@@ -518,6 +518,10 @@ $orange-light: #ffdcbc;
     }
     .decor {
       padding-top: 25px;
+
+      &.mobile { 
+        display: none;
+      }
     }
     .goblet {
       margin: auto 7px auto 15px;
@@ -653,6 +657,10 @@ $orange-light: #ffdcbc;
       right: 0;
       height: 100%;
       top: 0;
+
+      &.mobile { 
+        display: none;
+      }
     }
     p {
       color: #fefefe;

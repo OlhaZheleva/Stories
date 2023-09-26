@@ -1298,6 +1298,9 @@ section {
 .training .training-top .decor {
   padding-top: 25px;
 }
+.training .training-top .decor.mobile {
+  display: none;
+}
 .training .training-top .goblet {
   margin: auto 7px auto 15px;
 }
@@ -1416,6 +1419,9 @@ section {
   right: 0;
   height: 100%;
   top: 0;
+}
+.training .training-bottom .img-phone.mobile {
+  display: none;
 }
 .training .training-bottom p {
   color: #fefefe;
