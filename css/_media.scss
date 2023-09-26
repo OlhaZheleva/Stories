@@ -467,7 +467,7 @@ $white: #fefefe;
     }
     h2 {
       span {
-        color: $blue;
+        color: $purple;
       }
     }
     .items {
@@ -526,6 +526,7 @@ $white: #fefefe;
           height: 31px;
           top: -15px;
           right: 30px;
+          background-size: contain;
         }
 
         .icon {
@@ -541,7 +542,6 @@ $white: #fefefe;
 
       .body {
         border-radius: 0px 0px 20px 20px;
-        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
         height: 200px;
 
         img {
@@ -549,53 +549,7 @@ $white: #fefefe;
         }
       }
 
-      &:nth-child(1) {
-        .header {
-          &::after {
-            content: url(../img/check-1.svg);
-          }
-        }
-      }
-      &:nth-child(2) {
-        .header {
-          &::after {
-            content: url(../img/check-2.svg);
-          }
-        }
-      }
-      &:nth-child(3) {
-        .header {
-          &::after {
-            content: url(../img/check-3.svg);
-          }
-        }
-        .body {
-          padding: 0;
-
-          img {
-            width: calc(100% - 10px);
-            height: auto;
-          }
-        }
-      }
-      &:nth-child(4) {
-        .header {
-          &::after {
-            content: url(../img/check-4.svg);
-          }
-        }
-        .body {
-          padding: 18px 0 0 18px;
-          position: relative;
-
-          img {
-            width: 100%;
-            position: absolute;
-            right: -22px;
-            height: auto;
-          }
-        }
-      }
+    
     }
 
     .training-bottom {
@@ -617,11 +571,11 @@ $white: #fefefe;
         height: 100%;
         top: 0;
 
-        &.desck { 
+        &.desck {
           display: none;
         }
 
-        &.mobile { 
+        &.mobile {
           display: block;
         }
       }
@@ -786,7 +740,7 @@ $white: #fefefe;
         gap: 10px;
 
         .slick-slide {
-          width: 63.88vw;
+          width: auto;
           max-width: 260px;
         }
       }
@@ -819,7 +773,6 @@ $white: #fefefe;
 
     .button {
       display: flex;
-      background-color: $blue;
     }
   }
 
@@ -828,52 +781,49 @@ $white: #fefefe;
   .support {
     padding: 50px 0;
     border-radius: 30px;
-    background-color: #c8d8ff;
+    background-color: $purple;
+    margin-top: -0px;
 
     .inner {
-      border-radius: 0px;
-      padding: 0;
+      padding: 0px;
+      @include flexible();
       flex-direction: column;
       align-items: start;
-      gap: 20px;
 
-      div {
+      .about-support {
+        display: flex;
+        align-items: center;
         gap: 20px;
+        position: relative;
 
         p {
-          font-size: 14px;
-          font-weight: 300;
-          line-height: 16px; /* 114.286% */
+          max-width: 280px;
+          font-size: 16px;
+          line-height: 20px; /* 125% */
+        }
+
+        &::after {
+          display: none;
         }
       }
 
       h3 {
         font-size: 20px;
-        line-height: 23.484px; /* 117.418% */
-        display: inline;
-        position: relative;
-
-        img {
-          display: block;
-          position: absolute;
-          bottom: 10px;
-          left: 193px;
-          width: 34px;
-          height: 47px;
-        }
-      }
-      .avatar {
-        width: 65px;
-        height: 65px;
-        min-width: 65px;
-      }
-
-      .decor {
-        display: none;
+        line-height: 18px; /* 90% */
+        letter-spacing: -0.4px;
+        margin-bottom: 20px;
       }
     }
     .button {
-      margin-top: 20px;
+      width: 100%;
+      padding-left: 0;
+      padding-right: 0;
+      height: 50px;
+      padding-top: 0px;
+      font-size: 16px;
+      line-height: 10px; /* 62.5% */
+      letter-spacing: -0.32px;
+      margin-top: 40px;
     }
   }
 

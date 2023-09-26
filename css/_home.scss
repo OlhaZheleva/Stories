@@ -576,7 +576,9 @@ $orange-light: #ffdcbc;
         position: absolute;
         width: 81px;
         height: 42px;
-        content: url(../img/check.svg);
+        content: '';
+        background-image: url(./../img/check.svg);
+        @include back-image();
         top: -21px;
         right: 40px;
       }
