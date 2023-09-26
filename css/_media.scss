@@ -5,7 +5,6 @@ $orange: #ff6b00;
 $blue: #5668e6;
 $white: #fefefe;
 
-
 @mixin flexible {
   display: flex;
   align-items: center;
@@ -17,7 +16,6 @@ $white: #fefefe;
   background-position: center;
   background-size: cover;
 }
-
 
 /* Iphone 5 */
 @media (max-width: 330px) {
@@ -279,7 +277,7 @@ $white: #fefefe;
       position: relative;
 
       &::after {
-        content: '';
+        content: "";
         position: absolute;
         border-radius: 678px;
         height: 678px;
@@ -291,7 +289,7 @@ $white: #fefefe;
         z-index: 1;
       }
 
-      img { 
+      img {
         position: inherit;
         z-index: 2;
       }
@@ -301,7 +299,6 @@ $white: #fefefe;
       .mobile {
         display: block;
       }
-
     }
 
     .button {
@@ -312,7 +309,7 @@ $white: #fefefe;
   /* program section */
 
   .program {
-    padding: 100px  0;
+    padding: 100px 0;
     z-index: 2;
 
     &::after {
@@ -403,7 +400,7 @@ $white: #fefefe;
       }
     }
 
-    .button-white { 
+    .button-white {
       margin-top: 26px;
       border: none;
       display: flex;
@@ -424,29 +421,48 @@ $white: #fefefe;
       padding: 70px 15px 70px 30px;
       justify-content: start;
       align-items: start;
-  
+
       .title {
         font-size: 20px;
         line-height: 18px; /* 90% */
-        max-width:  156px;
+        max-width: 156px;
         min-width: inherit;
       }
-  
+
       .sub-title {
         font-size: 14px;
         line-height: 16px; /* 114.286% */
-        max-width: 190px;
+        max-width: 200px;
       }
-  
+
+      div {
+        &:nth-of-type(2) {
+          align-items: end;
+        }
+      }
       .text {
         font-size: 16px;
         line-height: 18px; /* 112.5% */
       }
       .decor {
-        padding-top: 25px;
+        padding-top: 0px;
+        margin-left: 20px;
+        margin-top: -11px;
+
+        &.desck {
+          display: none;
+        }
+
+        &.mobile {
+          display: block;
+        }
       }
+
       .goblet {
-        margin: auto 7px auto 15px;
+        margin: 0;
+        margin-right: 8px;
+        transform: rotate(12.164deg);
+        max-width: 39px;
       }
     }
     h2 {
@@ -581,6 +597,51 @@ $white: #fefefe;
         }
       }
     }
+
+    .training-bottom {
+      border-radius: 20px;
+      margin-top: 100px;
+      padding: 50px 30px 0 30px;
+
+      .img-bonus {
+        max-width: 230px;
+        margin-bottom: 20px;
+      }
+
+      .img-phone {
+        position: inherit;
+        left: 50%;
+        margin-top: 20px;
+        transform: translate(-50%, 0);
+        min-width: calc(100% + 60px);
+        height: 100%;
+        top: 0;
+
+        &.desck { 
+          display: none;
+        }
+
+        &.mobile { 
+          display: block;
+        }
+      }
+      p {
+        font-size: 14px;
+        line-height: 16px;
+      }
+      .button {
+        margin-top: 30px;
+        width: 100%;
+        height: 50px;
+        font-size: 16px;
+        line-height: 10px; /* 62.5% */
+        letter-spacing: -0.32px;
+
+        &::after {
+          display: none;
+        }
+      }
+    }
   }
   /* rates section */
 
@@ -592,7 +653,6 @@ $white: #fefefe;
     background-image: url(./../img/rates-back.svg);
     @include back-image();
     border-radius: 30px;
-
 
     .content {
       margin-top: 0;
