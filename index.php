@@ -38,22 +38,22 @@
             <a class="logo" href="">kukurudza</a>
             <ul class="nav">
                 <li class="nav-item">
-                    <a href="" class="nav-link">Для кого</a>
+                    <a href="#bl3" class="nav-link">Для кого</a>
                 </li>
                 <li class="nav-item">
-                    <a href="" class="nav-link">Програма</a>
+                    <a href="#bl6" class="nav-link">Програма</a>
                 </li>
                 <li class="nav-item">
-                    <a href="" class="nav-link">Формат</a>
+                    <a href="#bl8" class="nav-link">Формат</a>
                 </li>
                 <li class="nav-item">
-                    <a href="" class="nav-link">Відгуки</a>
+                    <a href="#bl9" class="nav-link">Відгуки</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#cost" class="nav-link">Тарифи</a>
+                    <a href="#bl7" class="nav-link">Тарифи</a>
                 </li>
             </ul>
-            <a href="" class="button button-purple">Зайняти місце</a>
+            <a href="#bl7" class="button button-purple">Зайняти місце</a>
             <div class="header-menu">
                 <p class="word">меню</p>
                 <button class="menu-btn">
@@ -65,19 +65,19 @@
                     <div class="menu-body">
                         <ul class="menu-nav nav">
                             <li class="nav-item">
-                                <a href="" class="nav-link">Для кого</a>
+                                <a href="#bl3" class="nav-link">Для кого</a>
                             </li>
                             <li class="nav-item">
-                                <a href="" class="nav-link">Програма</a>
+                                <a href="#bl6" class="nav-link">Програма</a>
                             </li>
                             <li class="nav-item">
-                                <a href="" class="nav-link">Формат</a>
+                                <a href="#bl8" class="nav-link">Формат</a>
                             </li>
                             <li class="nav-item">
-                                <a href="" class="nav-link">Відгуки</a>
+                                <a href="#bl9" class="nav-link">Відгуки</a>
                             </li>
                             <li class="nav-item">
-                                <a href="#cost" class="nav-link">Тарифи</a>
+                                <a href="#bl7" class="nav-link">Тарифи</a>
                             </li>
                         </ul>
                         <div class="social">
@@ -86,8 +86,8 @@
                             <a href=""><img src="img/icon-tiktok.svg" alt="tiktok"></a>
                         </div>
                         <div class="right">
-                            <a href="">Договір публічної оферти</a>
-                            <a href="">Політика конфіденційності</a>
+                            <a href="https://kukuruza.org/contract/" target="_blank">договір публічної оферти</a>
+                            <a href="https://kukuruza.org/privacy/" target="_blank">політика конфіденційності</a>
                         </div>
                     </div>
                 </div>
@@ -119,8 +119,8 @@
                 </li>
             </ul>
             <div class="main-buttons">
-                <a class="button button-purple">зайняти місце<span></span></a>
-                <a class="button button-white" href="">до програми</a>
+                <a class="button button-purple" href="#bl7">зайняти місце<span></span></a>
+                <a class="button button-white" href="#bl6">до програми</a>
                 <div>
                     <p>Старт: 9 жовтня</p>
                     <p>Навчання: 5 тижнів</p>
@@ -160,7 +160,7 @@
                     </p>
                 </div>
             </div>
-            <a href="" class="button button-white">мені це треба <span></span></a>
+            <a href="#bl7" class="button button-white">мені це треба <span></span></a>
         </div>
     </section>
     <!----------FOR------------->
@@ -213,7 +213,7 @@
                     </div>
                 </div>
             </div>
-            <a href="" class="button button-black">зайняти місце<span></span></a>
+            <a href="#bl7" class="button button-black">зайняти місце<span></span></a>
         </div>
     </section>
     <!----------DESIGN------------->
@@ -246,7 +246,7 @@
             </div>
         </div>
         <div class="container">
-            <a href="" class="button button-white">зайняти місце<span></span></a>
+            <a href="#bl7" class="button button-white">зайняти місце<span></span></a>
         </div>
     </section>
     <!-----------SPEAKER BLOCK------->
@@ -370,7 +370,7 @@
                     </div>
                 </div>
             </div>
-            <a href="" class="button button-black">зайняти місце<span></span></a>
+            <a href="#bl7" class="button button-black">зайняти місце<span></span></a>
         </div>
     </section>
     <!----------PROGRAM------------->
@@ -691,7 +691,7 @@
                     </article>
                 </div>
             </div>
-            <a href="" class="button button-white">зайняти місце <span></span></a>
+            <a href="#bl7" class="button button-white">зайняти місце <span></span></a>
         </div>
     </section>
     <!-----------RATES BLOCK------->
@@ -702,6 +702,8 @@
                 <p class="sub-title">початок 9 жовтня</p>
                 <div class="items">
                     <div class="rate">
+                        <script type="module"
+                            src="https://kwiga.com/build/js/kwiga-widget.js?t=1689944400804&uuid=3f4e3213-7348-445c-b54a-c15e674c896d&producer=https://kwiga.com/"></script>
                         <div class="header">
                             <h4>командний</h4>
                         </div>
@@ -759,10 +761,13 @@
                                 </div>
                             </div>
                         </div>
-                        <a href="" class="button ">зайняти місце <span></span></a>
-                        <a href="" class="button button-booking">забронювати місце</a>
+                        <a   data-widget-handler="1695799517" class="button ">зайняти місце <span></span></a>
+                        <a href="https://telegram.me/KukurudzaSchool_bot?start=6513d9fc2e104f18d416520e
+                        " class="button button-booking">забронювати місце</a>
                     </div>
                     <div class="rate">
+                        <script type="module"
+                            src="https://kwiga.com/build/js/kwiga-widget.js?t=1689944400804&uuid=3f4e3213-7348-445c-b54a-c15e674c896d&producer=https://kwiga.com/"></script>
                         <div class="header">
                             <h4>тільки для тебе</h4>
                         </div>
@@ -832,8 +837,9 @@
                                 </div>
                             </div>
                         </div>
-                        <a href="" class="button">зайняти місце <span></span></a>
-                        <a href="" class="button button-booking">забронювати місце</a>
+                        <a   data-widget-handler="1695799503" class="button">зайняти місце <span></span></a>
+                        <a href="https://telegram.me/KukurudzaSchool_bot?start=6513da02978f28e541704d56"
+                            class="button button-booking">забронювати місце</a>
                     </div>
                 </div>
             </div>
@@ -954,7 +960,7 @@
         </div>
     </section>
     <!------------FAQ BLOCK----------->
-    <section class="faq animate" data-animate="animTitle 2s" id="faq">
+    <section class="faq animate" data-animate="animTitle 2s" id="bl10">
         <div class="container">
             <h2>Питання</h2>
             <div class="faq-items accordion">
@@ -1038,11 +1044,11 @@
                     </article>
                 </div>
             </div>
-            <a class="button button-purple" href="">зайняти місце<span></span></a>
+            <a class="button button-purple" href="#bl7">зайняти місце<span></span></a>
         </div>
     </section>
     <!------------SUPPORT BLOCK------>
-    <section class="support" id="support">
+    <section class="support" id="bl11">
         <div class="container">
             <div class="inner">
                 <h3>А чи підійде <br>мені курс?</h3>
@@ -1052,7 +1058,7 @@
                     </div>
                     <p>Зв’яжись з консультантом Юлею, щоб перевірити чи дасть навчання результат саме тобі.</p>
                 </div>
-                <a href="" class="button button-white">написати менеджерці</a>
+                <a href="https://t.me/rizun_yuliia" class="button button-white">написати менеджерці</a>
             </div>
         </div>
     </section>
@@ -1063,32 +1069,33 @@
                 <p>kukurudza</p>
                 <p>Stories: стратегія монетизації.</p>
                 <div class="social">
-                    <a href=""><img src="img/icon-telegram.svg" alt="telegram"></a>
-                    <a href=""><img src="img/icon-instagram.svg" alt="instagram"></a>
-                    <a href=""><img src="img/icon-tiktok.svg" alt="tiktok"></a>
+                    <a href="https://t.me/Kukuruza_blog" target="_blank"><img src="img/icon-telegram.svg"
+                            alt="telegram"></a>
+                    <a href="https://www.instagram.com/kukurudza.blog/?igshid=YmMyMTA2M2Y%3D" target="_blank"><img
+                            src="img/icon-instagram.svg" alt="instagram"></a>
+                    <a href="" target="_blank"><img src="img/icon-tiktok.svg" alt="tiktok"></a>
                 </div>
                 <ul class="nav">
                     <li class="nav-item">
-                        <a href="" class="nav-link">Для кого</a>
+                        <a href="#bl3" class="nav-link">Для кого</a>
                     </li>
                     <li class="nav-item">
-                        <a href="" class="nav-link">Програма</a>
+                        <a href="#bl6" class="nav-link">Програма</a>
                     </li>
                     <li class="nav-item">
-                        <a href="" class="nav-link">Формат</a>
+                        <a href="#bl8" class="nav-link">Формат</a>
                     </li>
                     <li class="nav-item">
-                        <a href="" class="nav-link">Відгуки</a>
+                        <a href="#bl9" class="nav-link">Відгуки</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#cost" class="nav-link">Тарифи</a>
+                        <a href="#bl7" class="nav-link">Тарифи</a>
                     </li>
                 </ul>
             </div>
-
             <div class="right">
-                <a href="">договір публічної оферти</a>
-                <a href="">політика конфіденційності</a>
+                <a href="https://kukuruza.org/contract/" target="_blank">договір публічної оферти</a>
+                <a href="https://kukuruza.org/privacy/" target="_blank">політика конфіденційності</a>
             </div>
             <div class="carts">
                 <img src="img/mastercart.png" alt="">

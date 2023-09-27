@@ -130,7 +130,7 @@ $orange-light: #ffdcbc;
     border-radius: 15px;
     background: linear-gradient(180deg, #b795ff 0%, #8656e6 100%);
     grid-row: 1/3;
-    height: 100%;
+
     position: relative;
 
     img {
@@ -374,7 +374,7 @@ $orange-light: #ffdcbc;
     }
   }
 
-  .button { 
+  .button {
     display: none;
   }
   .accordion {
@@ -544,13 +544,12 @@ $orange-light: #ffdcbc;
   }
 
   .slider-training {
-    .slick-list { 
+    .slick-list {
       padding-top: 30px;
     }
     .slick-track {
       gap: 20px;
       overflow: visible;
-
     }
 
     /* Стрелка */
@@ -663,7 +662,6 @@ $orange-light: #ffdcbc;
     padding: 50px 65px 65px;
     color: $white;
 
-
     &::after {
       content: "";
       display: block;
@@ -677,11 +675,9 @@ $orange-light: #ffdcbc;
       left: 400px;
     }
 
-
     .img-bonus {
       max-width: 300px;
       margin-bottom: 15px;
-
     }
     .img-phone {
       position: absolute;
@@ -706,7 +702,6 @@ $orange-light: #ffdcbc;
         font-style: italic;
         font-weight: 600;
       }
-
     }
     .button {
       margin-top: 50px;
@@ -717,8 +712,6 @@ $orange-light: #ffdcbc;
       position: relative;
       z-index: 2;
       border: none;
-
-
     }
   }
 }
@@ -870,7 +863,6 @@ $orange-light: #ffdcbc;
     }
     .cost {
       margin-top: auto;
-
       p {
         color: #1a1a1a;
         text-align: center;
@@ -880,6 +872,15 @@ $orange-light: #ffdcbc;
         font-weight: 700;
         line-height: normal;
         text-transform: uppercase;
+      }
+
+      .text {
+        text-transform: none;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 24px; /* 125% */
+        margin-top: 30px;
       }
     }
     .cost-full {
@@ -944,6 +945,12 @@ $orange-light: #ffdcbc;
     }
 
     &:nth-child(1) {
+
+      .cost { 
+        .text { 
+          color: $purple;
+        }
+      }
       .button {
         background-color: $purple;
         &:hover {
@@ -966,6 +973,13 @@ $orange-light: #ffdcbc;
     }
 
     &:nth-child(2) {
+
+      .cost { 
+        .text { 
+          color: $orange;
+        }
+      }
+
       .header {
         background-color: $orange;
       }
@@ -1018,7 +1032,7 @@ $orange-light: #ffdcbc;
   .items {
     margin-top: 40px;
 
-    .slick-list { 
+    .slick-list {
       padding-top: 70px;
     }
     .slick-track {
@@ -1261,7 +1275,6 @@ $orange-light: #ffdcbc;
       }
     }
   }
-
 }
 
 /* support section */
@@ -1276,7 +1289,6 @@ $orange-light: #ffdcbc;
   z-index: 2;
   color: $white;
   position: relative;
-
 
   .inner {
     border-radius: 30px;
