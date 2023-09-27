@@ -415,6 +415,7 @@ $white: #fefefe;
     padding: 40px 0 50px 0;
     z-index: 3;
 
+
     .training-top {
       border-radius: 20px;
       flex-direction: column;
@@ -471,9 +472,11 @@ $white: #fefefe;
       }
     }
     .items {
-      margin-top: 35px;
+      margin-top: 0px;
     }
     .slider-training {
+      margin-top: 0;
+
       .slick-track {
         gap: 10px;
       }
@@ -492,7 +495,7 @@ $white: #fefefe;
         background-image: url(../img/prev-arrow.svg);
         background-size: 15px;
         left: inherit;
-        right: 60px;
+        right: 85px;
         background-position: 40%;
       }
       /* Стрелка вправо */
@@ -500,7 +503,7 @@ $white: #fefefe;
         background-image: url(../img/next-arrow.svg);
         background-size: 15px;
         left: inherit;
-        right: 0;
+        right: 25px;
         background-position: 60%;
       }
       .slick-arrow:hover {
@@ -557,6 +560,10 @@ $white: #fefefe;
       margin-top: 100px;
       padding: 50px 30px 0 30px;
 
+      &::after { 
+        display: none;
+      }
+
       .img-bonus {
         max-width: 230px;
         margin-bottom: 20px;
@@ -590,10 +597,6 @@ $white: #fefefe;
         font-size: 16px;
         line-height: 10px; /* 62.5% */
         letter-spacing: -0.32px;
-
-        &::after {
-          display: none;
-        }
       }
     }
   }
@@ -876,6 +879,7 @@ $white: #fefefe;
       display: none;
     }
   }
+
   .speakers {
     h2 {
       .mobile {
@@ -893,43 +897,20 @@ $white: #fefefe;
     .items {
       display: block;
       gap: 0px;
-      margin-top: 65px;
+      margin-top: 0px;
 
-      .slick-track {
-        max-width: none;
-        justify-content: inherit;
-      }
 
       .slick-arrow {
         height: 50px;
         width: 50px;
-        background-color: $blue;
         bottom: -23px;
-        right: 0;
+        right: 0px;
       }
-
-      .slick-arrow:hover {
-        background-repeat: no-repeat;
-        background-position: center;
-        transform: scale(1.1);
-        transform: scale(1.1);
-        box-shadow: 0 0 5px $blue;
-        -moz-box-shadow: 0 0 5px $blue;
-        -o-box-shadow: 0 0 5px $blue;
-        -ms-box-shadow: 0 0 5px $blue;
-        -webkit-box-shadow: 0 0 5px $blue;
+      .slick-next { 
+        right: 35px;
       }
-
-      /* Стрелка влево */
-      .slick-arrow.slick-prev {
-        background-image: url(../img/prev.png);
-        background-size: 25px;
-        right: 60px;
-      }
-      /* Стрелка вправо */
-      .slick-arrow.slick-next {
-        background-image: url(../img/next.png);
-        background-size: 25px;
+      .slick-prev { 
+        right: 95px;
       }
 
       .slick-track {

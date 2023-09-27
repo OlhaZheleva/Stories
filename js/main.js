@@ -50,11 +50,12 @@ $(document).ready(function () {
   // materials slider
   $(".slider-training").slick({
     variableWidth: true,
+    lazyLoad: "ondemand",
     autoplaySpeed: 2000,
     pauseOnHover: true,
     slidesToScroll: 1,
     autoplay: false,
-    infinite: false,
+    infinite: true,
     responsive: [
       {
         breakpoint: 769,
@@ -86,13 +87,12 @@ $(document).ready(function () {
 
   $(".speakers-slider").slick({
     variableWidth: true,
+    lazyLoad: "ondemand",
     autoplaySpeed: 2000,
     pauseOnHover: true,
     slidesToScroll: 1,
     autoplay: false,
-    infinite: false,
-    arrows: true,
-
+    infinite: true,
     responsive: [
       {
         breakpoint: 1040,

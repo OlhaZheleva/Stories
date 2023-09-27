@@ -418,7 +418,7 @@ section {
   line-height: normal;
 }
 .nav .nav-link:hover {
-  color: #5668e6;
+  color: #6736d0;
 }
 
 .menu .nav {
@@ -454,12 +454,13 @@ section {
   gap: 10px;
 }
 .social img:hover {
-  filter: brightness(0) saturate(100%) invert(36%) sepia(88%) saturate(901%) hue-rotate(208deg) brightness(93%) contrast(94%);
+  filter: brightness(0) saturate(100%) invert(22%) sepia(75%) saturate(2087%) hue-rotate(244deg) brightness(100%) contrast(98%);
 }
 
 /* slider slick */
 .slick-slider {
   position: relative;
+  width: calc(100vw - 50px);
 }
 
 /* Слайдер запущен */
@@ -469,12 +470,21 @@ section {
   display: block;
   touch-action: pan-y;
   -webkit-tap-highlight-color: transparent;
+  position: relative;
+  display: block;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
 }
 
 /* Лента слайдов */
 .slick-track {
   display: flex;
-  gap: 10px;
+  gap: 20px;
+  position: relative;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
 }
 
 /* Слайд */
@@ -511,12 +521,12 @@ section {
 
 /* Стрелка влево */
 .slick-arrow.slick-prev {
-  background-image: url(/img/prev.png);
+  background-image: url(../img/prev.png);
 }
 
 /* Стрелка вправо */
 .slick-arrow.slick-next {
-  background-image: url(/img/next.png);
+  background-image: url(../img/next.png);
 }
 
 /* footer */
@@ -1315,21 +1325,25 @@ section {
   margin: auto 7px auto 15px;
 }
 .training .items {
-  margin-top: 50px;
+  margin-top: 20px;
 }
 .training .slider-training {
   /* Стрелка */
   /* Стрелка влево */
   /* Стрелка вправо */
 }
+.training .slider-training .slick-list {
+  padding-top: 30px;
+}
 .training .slider-training .slick-track {
   gap: 20px;
+  overflow: visible;
 }
 .training .slider-training .slick-arrow {
   height: 60px;
   width: 60px;
   background-color: #6736d0;
-  top: -110px;
+  top: -80px;
 }
 .training .slider-training .slick-arrow.slick-prev {
   background-image: url(../img/prev-arrow.svg);
@@ -1403,12 +1417,12 @@ section {
   width: auto;
   height: 100%;
 }
-.training .slide:nth-child(6) .body {
+.training .slide:nth-child(7) .body {
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   padding-top: 14px;
   margin: 0;
 }
-.training .slide:nth-child(6) .body img {
+.training .slide:nth-child(7) .body img {
   min-width: 100%;
   margin-left: 50px;
 }
@@ -1722,15 +1736,15 @@ section {
   left: 334px;
 }
 .speakers .items {
-  margin-top: 100px;
-  margin-left: auto;
-  margin-right: auto;
+  margin-top: 40px;
   /* Стрелка */
   /* Стрелка влево */
 }
+.speakers .items .slick-list {
+  padding-top: 70px;
+}
 .speakers .items .slick-track {
-  max-width: 100%;
-  justify-content: center;
+  overflow: visible;
 }
 .speakers .items .slick-arrow {
   position: absolute;
@@ -1746,10 +1760,10 @@ section {
   background-color: #6736d0;
 }
 .speakers .items .slick-arrow.slick-prev {
-  right: 60px;
+  right: 110px;
 }
 .speakers .items .slick-arrow.slick-next {
-  right: 0;
+  right: 50px;
 }
 .speakers .items .speaker {
   border-radius: 30px;
@@ -2415,9 +2429,10 @@ section {
     color: #6736d0;
   }
   .training .items {
-    margin-top: 35px;
+    margin-top: 0px;
   }
   .training .slider-training {
+    margin-top: 0;
     /* Стрелка */
     /* Стрелка влево */
     /* Стрелка вправо */
@@ -2436,14 +2451,14 @@ section {
     background-image: url(../img/prev-arrow.svg);
     background-size: 15px;
     left: inherit;
-    right: 60px;
+    right: 85px;
     background-position: 40%;
   }
   .training .slider-training .slick-arrow.slick-next {
     background-image: url(../img/next-arrow.svg);
     background-size: 15px;
     left: inherit;
-    right: 0;
+    right: 25px;
     background-position: 60%;
   }
   .training .slider-training .slick-arrow:hover {
@@ -2489,6 +2504,9 @@ section {
     margin-top: 100px;
     padding: 50px 30px 0 30px;
   }
+  .training .training-bottom::after {
+    display: none;
+  }
   .training .training-bottom .img-bonus {
     max-width: 230px;
     margin-bottom: 20px;
@@ -2519,9 +2537,6 @@ section {
     font-size: 16px;
     line-height: 10px; /* 62.5% */
     letter-spacing: -0.32px;
-  }
-  .training .training-bottom .button::after {
-    display: none;
   }
   /* rates section */
   .rates {
@@ -2769,40 +2784,19 @@ section {
   .speakers .items {
     display: block;
     gap: 0px;
-    margin-top: 65px;
-    /* Стрелка влево */
-    /* Стрелка вправо */
-  }
-  .speakers .items .slick-track {
-    max-width: none;
-    justify-content: inherit;
+    margin-top: 0px;
   }
   .speakers .items .slick-arrow {
     height: 50px;
     width: 50px;
-    background-color: #5668e6;
     bottom: -23px;
-    right: 0;
+    right: 0px;
   }
-  .speakers .items .slick-arrow:hover {
-    background-repeat: no-repeat;
-    background-position: center;
-    transform: scale(1.1);
-    transform: scale(1.1);
-    box-shadow: 0 0 5px #5668e6;
-    -moz-box-shadow: 0 0 5px #5668e6;
-    -o-box-shadow: 0 0 5px #5668e6;
-    -ms-box-shadow: 0 0 5px #5668e6;
-    -webkit-box-shadow: 0 0 5px #5668e6;
+  .speakers .items .slick-next {
+    right: 35px;
   }
-  .speakers .items .slick-arrow.slick-prev {
-    background-image: url(../img/prev.png);
-    background-size: 25px;
-    right: 60px;
-  }
-  .speakers .items .slick-arrow.slick-next {
-    background-image: url(../img/next.png);
-    background-size: 25px;
+  .speakers .items .slick-prev {
+    right: 95px;
   }
   .speakers .items .slick-track {
     gap: 20px;

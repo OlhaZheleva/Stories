@@ -494,7 +494,7 @@ section {
     line-height: normal;
   }
   .nav-link:hover {
-    color: $blue;
+    color: $purple;
   }
 }
 
@@ -544,8 +544,8 @@ section {
 
   img {
     &:hover {
-      filter: brightness(0) saturate(100%) invert(36%) sepia(88%) saturate(901%)
-        hue-rotate(208deg) brightness(93%) contrast(94%);
+      filter: brightness(0) saturate(100%) invert(22%) sepia(75%)
+        saturate(2087%) hue-rotate(244deg) brightness(100%) contrast(98%);
     }
   }
 }
@@ -554,6 +554,7 @@ section {
 
 .slick-slider {
   position: relative;
+  width: calc(100vw - 50px);
 }
 
 /* Слайдер запущен */
@@ -568,11 +569,21 @@ section {
   display: block;
   touch-action: pan-y;
   -webkit-tap-highlight-color: transparent;
+  position: relative;
+  display: block;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+
 }
 /* Лента слайдов */
 .slick-track {
   display: flex;
-  gap: 10px;
+  gap: 20px;
+  position: relative;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
 }
 /* Слайд */
 .slick-slide {
@@ -618,11 +629,11 @@ section {
 
 /* Стрелка влево */
 .slick-arrow.slick-prev {
-  background-image: url(/img/prev.png);
+  background-image: url(../img/prev.png);
 }
 /* Стрелка вправо */
 .slick-arrow.slick-next {
-  background-image: url(/img/next.png);
+  background-image: url(../img/next.png);
 }
 
 /* footer */
@@ -935,7 +946,6 @@ section {
 
       p {
         font-size: 25px;
-        
 
         &:nth-child(2) {
           font-size: 14px;
@@ -952,12 +962,11 @@ section {
       top: 56px;
       right: 35px;
 
-      a { 
+      a {
         img {
           height: 26px;
         }
       }
-
     }
     .right {
       gap: 10px;
