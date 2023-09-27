@@ -89,9 +89,9 @@ $(document).ready(function () {
     autoplaySpeed: 2000,
     pauseOnHover: true,
     slidesToScroll: 1,
-    autoplay: true,
+    autoplay: false,
     infinite: false,
-    arrows: false,
+    arrows: true,
 
     responsive: [
       {

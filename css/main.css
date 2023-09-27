@@ -939,7 +939,7 @@ section {
   background-position: center;
   background-size: cover;
   padding: 100px 0 200px 0;
-  border-radius: 60px 60px 0 0;
+  border-radius: 50px 50px 0 0;
   overflow: hidden;
   background-image: url(./../img/about-back.svg);
   margin-top: -100px;
@@ -967,7 +967,6 @@ section {
   border-radius: 15px;
   background: linear-gradient(180deg, #b795ff 0%, #8656e6 100%);
   grid-row: 1/3;
-  text-align: center;
   height: 100%;
   position: relative;
 }
@@ -977,6 +976,7 @@ section {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  max-width: 100%;
 }
 .about-block .button {
   margin-top: 20px;
@@ -1098,6 +1098,13 @@ section {
 .for .button-black {
   margin-top: 20px;
 }
+.for .button-black:hover {
+  background-color: #fefefe;
+  color: #1a1a1a;
+}
+.for .button-black:hover span {
+  content: url(../img/finger-black.svg);
+}
 
 /* design section */
 .design {
@@ -1167,6 +1174,9 @@ section {
 .program .program-title h2 {
   color: #ffffff;
   margin-right: 10px;
+}
+.program .button {
+  display: none;
 }
 .program .accordion {
   color: #fefefe;
@@ -1382,7 +1392,7 @@ section {
 .training .slide .body {
   border-radius: 0px 0px 30px 30px;
   background: #fff;
-  margin: -3px;
+  margin: -2px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1410,6 +1420,20 @@ section {
   padding: 50px 65px 65px;
   color: #fefefe;
 }
+.training .training-bottom::after {
+  content: "";
+  display: block;
+  position: absolute;
+  background-image: url(./../img/present.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-size: contain;
+  width: 130px;
+  height: 138px;
+  top: 181px;
+  left: 400px;
+}
 .training .training-bottom .img-bonus {
   max-width: 300px;
   margin-bottom: 15px;
@@ -1429,6 +1453,8 @@ section {
   font-weight: 300;
   line-height: 20px; /* 125% */
   max-width: 500px;
+  display: block;
+  position: relative;
 }
 .training .training-bottom p span {
   font-style: italic;
@@ -1443,20 +1469,6 @@ section {
   position: relative;
   z-index: 2;
   border: none;
-}
-.training .training-bottom .button::after {
-  content: "";
-  display: block;
-  z-index: -1;
-  position: absolute;
-  background-image: url(./../img/present.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  width: 92px;
-  height: 109px;
-  bottom: 0;
-  right: -72px;
 }
 
 /* rates section */
@@ -1713,14 +1725,35 @@ section {
   margin-top: 100px;
   margin-left: auto;
   margin-right: auto;
+  /* Стрелка */
+  /* Стрелка влево */
 }
 .speakers .items .slick-track {
   max-width: 100%;
   justify-content: center;
 }
+.speakers .items .slick-arrow {
+  position: absolute;
+  font-size: 0;
+  height: 50px;
+  width: 50px;
+  background-color: #939291;
+  border-radius: 50%;
+  bottom: -25px;
+  z-index: 10;
+  cursor: pointer;
+  background-size: 30px;
+  background-color: #6736d0;
+}
+.speakers .items .slick-arrow.slick-prev {
+  right: 60px;
+}
+.speakers .items .slick-arrow.slick-next {
+  right: 0;
+}
 .speakers .items .speaker {
   border-radius: 30px;
-  background: #E8E8E8;
+  background: #e8e8e8;
   position: relative;
   padding: 90px 48px 50px 30px;
   max-width: 600px;
@@ -1728,7 +1761,7 @@ section {
 }
 .speakers .items .speaker .head {
   position: absolute;
-  top: -50px;
+  top: -70px;
   display: flex;
   align-items: center;
   gap: 5px;
@@ -1740,7 +1773,7 @@ section {
   font-weight: 600;
   line-height: 20px;
   border-radius: 10px;
-  background: #5668e6;
+  background: #6736d0;
   padding: 14px 13px 16px 55px;
   margin-left: -50px;
   width: 68%;
@@ -1749,7 +1782,7 @@ section {
   color: #fefefe;
 }
 .speakers .items .speaker .text p:nth-child(1) {
-  color: #c8d8ff;
+  color: #fefefe;
   font-family: "Ermilov-Bold";
   font-size: 15px;
   font-style: normal;
@@ -1818,7 +1851,7 @@ section {
   line-height: 20px;
 }
 .speakers .button {
-  margin-top: 10px;
+  margin-top: 40px;
 }
 
 /* reviews section */
@@ -1882,10 +1915,12 @@ section {
   background-color: #fefefe;
   padding-top: 100px;
   border-radius: 50px 50px 0 0;
+  padding-bottom: 200px;
+  z-index: 1;
+  position: relative;
 }
 .faq .button {
   margin-top: 30px;
-  background-color: #1a1a1a;
 }
 .faq .accordion .accordion-heading p .accordion-icon {
   background-color: #c7b4ff;
@@ -1897,11 +1932,14 @@ section {
 /* support section */
 .support {
   overflow: hidden;
-  padding: 100px 0;
+  padding: 0px 0 100px 0;
   background-color: #fefefe;
   border-radius: 0 0 50px 50px;
   margin-top: -2px;
+  margin-top: -100px;
+  z-index: 2;
   color: #fefefe;
+  position: relative;
 }
 .support .inner {
   border-radius: 30px;
@@ -1932,6 +1970,7 @@ section {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  background-size: contain;
   width: 19vw;
   height: 100px;
   left: 70%;

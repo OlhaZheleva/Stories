@@ -101,7 +101,7 @@ $orange-light: #ffdcbc;
 .about-block {
   @include back-image();
   padding: 100px 0 200px 0;
-  border-radius: 60px 60px 0 0;
+  border-radius: 50px 50px 0 0;
   overflow: hidden;
   background-image: url(./../img/about-back.svg);
   margin-top: -100px;
@@ -130,7 +130,6 @@ $orange-light: #ffdcbc;
     border-radius: 15px;
     background: linear-gradient(180deg, #b795ff 0%, #8656e6 100%);
     grid-row: 1/3;
-    text-align: center;
     height: 100%;
     position: relative;
 
@@ -140,6 +139,7 @@ $orange-light: #ffdcbc;
       display: block;
       margin-left: auto;
       margin-right: auto;
+      max-width: 100%;
     }
   }
 
@@ -159,7 +159,6 @@ $orange-light: #ffdcbc;
   z-index: 3;
   margin-top: -100px;
   overflow: hidden;
-
 
   .for-items {
     display: grid;
@@ -286,6 +285,15 @@ $orange-light: #ffdcbc;
   }
   .button-black {
     margin-top: 20px;
+
+    &:hover {
+      background-color: $white;
+      color: $black;
+
+      span {
+        content: url(../img/finger-black.svg);
+      }
+    }
   }
 }
 
@@ -366,6 +374,9 @@ $orange-light: #ffdcbc;
     }
   }
 
+  .button { 
+    display: none;
+  }
   .accordion {
     color: $white;
 
@@ -499,10 +510,10 @@ $orange-light: #ffdcbc;
       max-width: 500px;
     }
 
-    div { 
+    div {
       display: flex;
 
-      &:nth-of-type(1) { 
+      &:nth-of-type(1) {
         flex-direction: column;
       }
     }
@@ -519,7 +530,7 @@ $orange-light: #ffdcbc;
     .decor {
       padding-top: 25px;
 
-      &.mobile { 
+      &.mobile {
         display: none;
       }
     }
@@ -580,7 +591,7 @@ $orange-light: #ffdcbc;
         position: absolute;
         width: 81px;
         height: 42px;
-        content: '';
+        content: "";
         background-image: url(./../img/check.svg);
         @include back-image();
         top: -21px;
@@ -614,7 +625,7 @@ $orange-light: #ffdcbc;
     .body {
       border-radius: 0px 0px 30px 30px;
       background: #fff;
-      margin: -3px;
+      margin: -2px;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -648,9 +659,25 @@ $orange-light: #ffdcbc;
     padding: 50px 65px 65px;
     color: $white;
 
+
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      background-image: url(./../img/present.svg);
+      @include back-image();
+      background-size: contain;
+      width: 130px;
+      height: 138px;
+      top: 181px;
+      left: 400px;
+    }
+
+
     .img-bonus {
       max-width: 300px;
       margin-bottom: 15px;
+
     }
     .img-phone {
       position: absolute;
@@ -658,7 +685,7 @@ $orange-light: #ffdcbc;
       height: 100%;
       top: 0;
 
-      &.mobile { 
+      &.mobile {
         display: none;
       }
     }
@@ -668,11 +695,14 @@ $orange-light: #ffdcbc;
       font-weight: 300;
       line-height: 20px; /* 125% */
       max-width: 500px;
+      display: block;
+      position: relative;
 
       span {
         font-style: italic;
         font-weight: 600;
       }
+
     }
     .button {
       margin-top: 50px;
@@ -685,18 +715,6 @@ $orange-light: #ffdcbc;
       border: none;
 
 
-      &::after {
-        content: "";
-        display: block;
-        z-index: -1;
-        position: absolute;
-        background-image: url(./../img/present.svg);
-        @include back-image();
-        width: 92px;
-        height: 109px;
-        bottom: 0;
-        right: -72px;
-      }
     }
   }
 }
@@ -1003,9 +1021,32 @@ $orange-light: #ffdcbc;
       justify-content: center;
     }
 
+    /* Стрелка */
+    .slick-arrow {
+      position: absolute;
+      font-size: 0;
+      height: 50px;
+      width: 50px;
+      background-color: #939291;
+      border-radius: 50%;
+      bottom: -25px;
+      z-index: 10;
+      cursor: pointer;
+      background-size: 30px;
+      background-color: $purple;
+    }
+    /* Стрелка влево */
+    .slick-arrow.slick-prev {
+      right: 60px;
+    }
+
+    .slick-arrow.slick-next {
+      right: 0;
+    }
+
     .speaker {
       border-radius: 30px;
-      background: #E8E8E8;
+      background: #e8e8e8;
       position: relative;
       padding: 90px 48px 50px 30px;
       max-width: 600px;
@@ -1013,7 +1054,7 @@ $orange-light: #ffdcbc;
 
       .head {
         position: absolute;
-        top: -50px;
+        top: -70px;
         display: flex;
         align-items: center;
         gap: 5px;
@@ -1026,7 +1067,7 @@ $orange-light: #ffdcbc;
         font-weight: 600;
         line-height: 20px;
         border-radius: 10px;
-        background: $blue;
+        background: $purple;
         padding: 14px 13px 16px 55px;
         margin-left: -50px;
         width: 68%;
@@ -1035,7 +1076,7 @@ $orange-light: #ffdcbc;
           color: $white;
 
           &:nth-child(1) {
-            color: #c8d8ff;
+            color: $white;
             font-family: "Ermilov-Bold";
             font-size: 15px;
             font-style: normal;
@@ -1117,7 +1158,7 @@ $orange-light: #ffdcbc;
   }
 
   .button {
-    margin-top: 10px;
+    margin-top: 40px;
   }
 }
 
@@ -1190,11 +1231,14 @@ $orange-light: #ffdcbc;
   background-color: $white;
   padding-top: 100px;
   border-radius: 50px 50px 0 0;
+  padding-bottom: 200px;
+  z-index: 1;
+  position: relative;
 
   .button {
     margin-top: 30px;
-    background-color: $black;
   }
+
   .accordion {
     .accordion-heading {
       p {
@@ -1213,17 +1257,22 @@ $orange-light: #ffdcbc;
       }
     }
   }
+
 }
 
 /* support section */
 
 .support {
   overflow: hidden;
-  padding: 100px 0;
+  padding: 0px 0 100px 0;
   background-color: $white;
   border-radius: 0 0 50px 50px;
   margin-top: -2px;
+  margin-top: -100px;
+  z-index: 2;
   color: $white;
+  position: relative;
+
 
   .inner {
     border-radius: 30px;
@@ -1251,6 +1300,7 @@ $orange-light: #ffdcbc;
         content: "";
         background-image: url(./../img/support-decor.svg);
         @include back-image();
+        background-size: contain;
         width: 19vw;
         height: 100px;
         left: 70%;
